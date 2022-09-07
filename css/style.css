@@ -1,0 +1,152 @@
+@font-face {
+  font-family: "Rubik-Light";
+  src: url("/fonts/Rubik-Light.eot");
+  src: url("/fonts/Rubik-Light.eot?#iefix") format("embedded-opentype"), url("/fonts/Rubik-Light.woff2") format("woff2"), url("/fonts/Rubik-Light.woff") format("woff"), url("/fonts/Rubik-Light.ttf") format("truetype"), url("/fonts/Rubik-Light.svg#Rubik-Light") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "Rubik-Light", sans-serif !important;
+  font-weight: 300 !important;
+}
+
+.menu {
+  height: 84px;
+  background-color: #fff;
+}
+
+.first,
+.second {
+  min-height: 466px;
+  background-color: #215398;
+}
+@media (max-width: 767.98px) {
+  .first,
+.second {
+    padding-bottom: 3rem;
+  }
+}
+.first .h1-main,
+.second .h1-main {
+  font-style: normal;
+  font-size: 2.5rem;
+  line-height: 52px;
+  margin-top: 3rem;
+  color: #fff;
+}
+@media (max-width: 767.98px) {
+  .first .h1-main,
+.second .h1-main {
+    font-size: 1.5rem;
+  }
+}
+.first .p-main,
+.second .p-main {
+  color: #fff;
+  font-size: 1.25rem;
+}
+@media (max-width: 767.98px) {
+  .first .p-main,
+.second .p-main {
+    font-size: 1rem;
+  }
+}
+.first .arrow-container,
+.second .arrow-container {
+  margin: 0;
+}
+.first .btn-rounded,
+.second .btn-rounded {
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+}
+.first .btn-rounded:hover,
+.second .btn-rounded:hover {
+  border: 1px solid #28A9E0;
+  background: rgba(255, 255, 255, 0.05);
+}
+.first .btn-rounded .arrow-previous,
+.first .btn-rounded .arrow-next,
+.second .btn-rounded .arrow-previous,
+.second .btn-rounded .arrow-next {
+  width: 12.61px;
+  height: 24px;
+  margin-left: -3px;
+}
+.first .btn-rounded .arrow-next,
+.second .btn-rounded .arrow-next {
+  margin-right: -6px;
+  transform: rotate(180deg);
+}
+@media (max-width: 767.98px) {
+  .first .btn-rounded,
+.second .btn-rounded {
+    display: none;
+  }
+}
+.first .div-main,
+.second .div-main {
+  min-height: 228px;
+  margin: 10px;
+  background-color: #fff;
+}
+@media (max-width: 575.98px) {
+  .first .div-main,
+.second .div-main {
+    width: 90%;
+  }
+}
+.first .div-main .box-container,
+.second .div-main .box-container {
+  margin-top: 36.6px;
+}
+.first .div-main .box-container .h3-box,
+.first .div-main .box-container .h3-box-last,
+.second .div-main .box-container .h3-box,
+.second .div-main .box-container .h3-box-last {
+  font-size: 1.25rem;
+  line-height: 23.7px;
+  min-height: 24px;
+  color: #2D3236;
+}
+.first .div-main .box-container .h3-box-last,
+.second .div-main .box-container .h3-box-last {
+  min-height: 48px;
+  max-width: 210px;
+}
+.first .div-main .box-container .p-box,
+.second .div-main .box-container .p-box {
+  font-size: 0.9375rem;
+  line-height: 24px;
+  color: #808080;
+}
+
+.red-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #FF3859;
+  margin: -16px auto;
+}
+
+.second {
+  background-color: #F1F6FC;
+  padding-bottom: 3rem;
+}
+.second .h1-main,
+.second .p-main,
+.second .h3-box {
+  color: #2D3236;
+}
+.second .h2-main {
+  height: 32px;
+  margin: 20px auto;
+}
+.second .h2-second {
+  font-size: 1.875rem;
+  line-height: 30px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,171 @@
+@import 'variables';
+@import '../dist/scss/functions.scss';
+@import '../dist/scss/variables.scss';
+@import '../dist/scss/breakpoints.scss';
+
+
+
+
+// Fonts
+
+@font-face {
+  font-family: 'Rubik-Light';
+  src: url('/fonts/Rubik-Light.eot');
+  src: url('/fonts/Rubik-Light.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Rubik-Light.woff2') format('woff2'),
+    url('/fonts/Rubik-Light.woff') format('woff'),
+    url('/fonts/Rubik-Light.ttf') format('truetype'),
+    url('/fonts/Rubik-Light.svg#Rubik-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+// Global
+
+body {
+  font-family: 'Rubik-Light', sans-serif !important;
+  font-weight: 300 !important;
+}
+
+// Navigation
+
+.menu {
+  height: 84px;
+  background-color: $mainBgcColor;
+}
+
+// First section
+
+.first,
+.second {
+  min-height: 466px;
+  background-color: $secondBgcColor;
+
+  @include media-breakpoint-down(md) {
+    padding-bottom: 3rem;
+  }
+
+  .h1-main {
+    font-style: normal;
+    font-size: 2.5rem;
+    line-height: 52px;
+    margin-top: 3rem;
+    color: $secondTxtColor;
+
+    @include media-breakpoint-down(md) {
+      font-size: 1.5rem;
+    }
+  }
+
+  .p-main {
+    color: $secondTxtColor;
+    font-size: 1.25rem;
+
+    @include media-breakpoint-down(md) {
+      font-size: 1rem;
+    }
+  }
+
+  .arrow-container {
+    margin: 0;
+  }
+
+  .btn-rounded {
+    width: 48px;
+    height: 48px;
+    background: $transpBgcColor;
+    border-radius: 50%;
+
+    &:hover {
+      border: 1px solid $nextBtnColor;
+      background: $transpBgcColor;
+    }
+
+    .arrow-previous,
+    .arrow-next {
+      width: 12.61px;
+      height: 24px;
+      margin-left: -3px;
+    }
+
+    .arrow-next {
+      margin-right: -6px;
+      transform: rotate(180deg);
+    }
+
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+
+  .div-main {
+    min-height: 228px;
+    margin: 10px;
+    background-color: $mainBgcColor;
+
+    @include media-breakpoint-down(sm) {
+      width: 90%;
+    }
+
+    .box-container {
+      margin-top: 36.6px;
+
+      .h3-box,
+      .h3-box-last {
+        font-size: 1.25rem;
+        line-height: 23.7px;
+        min-height: 24px;
+        color: $mainTxtColor;
+      }
+
+      .h3-box-last {
+        min-height: 48px;
+        max-width: 210px;
+      }
+
+      .p-box {
+        font-size: .9375rem;
+        line-height: 24px;
+        color: $thirdTxtColor;
+      }
+    }
+  }
+}
+
+// Red circle
+
+.red-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #FF3859;
+  margin: -16px auto;
+}
+
+// Second section
+
+.second {
+  background-color: $thirdBgcColor;
+  padding-bottom: 3rem;
+
+
+  .h1-main,
+  .p-main,
+  .h3-box {
+    color: $mainTxtColor;
+  }
+
+  .h2-main {
+    height: 32px;
+    margin: 20px auto;
+  }
+
+  .h2-second {
+    font-size: 1.875rem;
+    line-height: 30px;
+  }
+
+
+}
